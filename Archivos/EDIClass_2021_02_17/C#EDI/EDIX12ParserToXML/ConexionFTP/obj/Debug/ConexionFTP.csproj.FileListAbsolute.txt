@@ -1,0 +1,10 @@
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\bin\Debug\ConexionFTP.exe.config
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\bin\Debug\ConexionFTP.exe
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\bin\Debug\ConexionFTP.pdb
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.csprojAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.Form1.resources
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.csproj.GenerateResource.cache
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.exe
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12ParserToXML\ConexionFTP\obj\Debug\ConexionFTP.pdb

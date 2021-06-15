@@ -1,0 +1,293 @@
+	
+	ISA Header y IEA Footer
+		PDF de ayuda: https://www.aftermarketsuppliers.org/sites/aftermarketsuppliers.org/files/isa%20iea%20interchg.pdf
+
+
+ * separador de elementos.
+ > Separador de subelementos.
+ ~ Terminador/Separador del Segmento.
+
+
+	ISA Header.
+
+
+PrimerGrupo: ISA01 - ISA04
+	'Para seguridad se usa'
+		'Ejem: ISA*00*          *00*          '
+ ISA01 = "00"		Calificador de información de autorización.
+ ISA02 = (10 espacios)	Información de autorización.
+ ISA03 = "00"		Calificador de información de autorización "00".
+ ISA04 = (10 espacios)	Información de autorización.
+
+
+SegundoGrupo: ISA05 - ISA08
+	'Son basicamente el remitente y el receptor'
+		'Ejem: *02*123456789012345*ZZ*ABC456789012345*
+ ISA05/ISA06 Remitente
+ ISA07/ISA08 Receptor
+
+	ISA05 = 02 		 Id del intercambio del Cualificador 'Debe estar en 2 codigos de caracteres'.
+	ISA06 = 123456789012345	 Id del intercambio del Remitente 'Deben ser solo 15 caracteres'.
+	ISA07 = ZZ		 Id del intercambio del Cualificador 'Debe estar en 2 codigos de caracteres 
+				 o personalizado, puede usar ZZ'.
+	ISA08 = 123456789012345  Id del intercambio del Receptor 'Deben ser solo 15 caracteres'.
+
+ 	'Ejemplos de Cualificadores para ISA05 y ISA07'
+	01 D-U-N-S (Dun & Bradstreet).
+	02 SCAC ( Código Alfa portador standar para los transportistas de motor ).
+	04 IATA (Asociación Internacional de Transporte Aéreo).
+	12 Numero Telefonico.
+	13 UCS Codigo.
+	16 D&B D-U-N-D plus-4 sufijo de carácter.
+	17 Asociación Americana de Banqueros.
+	30 Identificación fiscal federal.
+	ZZ Caracter personalizado definido mutuo por ambas empresas.
+
+
+TercerGrupo: ISA09 - ISA12
+		'Ejem: *200531*1347*U*00401*'
+ ISA09 = 200531	Fecha de intercambio YYMMDD (6 caracteres).
+ ISA10 = 1347	Hora de intercambio HHMM (4 caracteres 'Hora milirar').
+ ISA11 = U	Id. de normas de intercambio (1 caracter).
+ ISA12 = 00401 Numero de vercion de EDI (Siempre 5 caracteres '0041 puede ser leido como 4.01').
+
+
+		IEA Footer.
+
+
+PrimerGrupo: IEA01 - IEA02
+		'Ejem: IEA*1*000123915'
+ IEA01 = 1		El numero de Segmentos G.S.
+ IEA02 = 000123915	Numero de control asignado por el centro de intercambio.
+
+
+---------------------------------------------------------------------------------------------------------
+
+	Cabecera GS, cabecera ST, estructura de sobres.
+
+El encabezado puede tener varios apartados, cada grupo funcional comienza con el encabezado G.S y termina con 
+el pie de pagina G con frecuencia solo hay un grupo funcional por archivo EDI, cada grupo funcional, tambien 
+podria llamarse sobre interno se compone de uno o mas conjuntos de transacciones al mismo tiempo, cada conjunto 
+de transacciones comienza con "ST".
+
+	ST01	Recuentro de segmentos y el numero de control/secuencia (donde coinside con el ST02).
+
+
+PrimerGrupo: GS01 - GS04
+		'Ejem: GS*PO*SENDER*RECEIVER*20200622*'
+ GS01 = PO		Es un codigo funcional de identificador.
+ GS02 = SENDER		Es el codigo del remitente.
+ GS03 = RECEIVER	Es el codigo del receptor.
+ GS04 = 20200622	Es la fecha de 8 digitos comensando con el siglo, año, mes y día.
+
+
+SegundoGrupo: GS05 - GS08
+	'Son creados en el momento, no son fijos, asi que puede varear la longitud'
+		'Ejem: *0900*159*X*004010~'
+ GS05 = 0900		Usualmente es tiempo HHMM o incluso HHMMSS ('se pueden incluir segundos; es opcional').
+ GS06 = 159		Numero de Grupo de Control, (es un numero secuencial asignado por el software EDI cuando 
+			se crean los mensajes, 'puede ser por ejemplo un campo en la BD que se incrementa 
+			automaticamente cada vez que se envia un archivo de API').
+ GS07 = X		Codigo de responsabilidad de la empresa, y por lo general es solo siempre el valor de X 
+			que representa al Comite de Normas Acreditadas.
+ GS08 = 004010		Es el numero de Vercion liberado de EDI por ejemplo '004010' representa 4.01.
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+	Acknowledgment Messages
+		'Los 4 tipos diferentes de mensaje de reconocimiento'
+
+ MDN Solo se utiliza para AS2		Es una de las metodologias de transporte, Podria ser sincrono, lo que 
+					significa que se devuelve como respuesta a una solicitud HTP o puede 
+					ser asincrono, los mensajes de error pueden ser extraños y diferentes, 
+					por lo tanto es complejo profundizar.
+
+ 997 Es el mas común			Se llama el Acuse de recibo funcional o F.A., donde hay otro mensaje
+					realmente llamandolo; Que es un reconocimiento tecnico, pero se puede 
+					enviar una respuesta a cualquier transaccion EDI recibida, cuando reciba
+					un EDI 997 en respuesta a una transaccion que envio anteriormente, solo 
+					sabe que su documento llego y que fue procesado por el traductor EDI del 
+					destinatario.
+					Los 997 no proporcionan ninguna indicacion de que el socio comercial este de
+					acuerdo con los contenidos de la transaccion o que la transaccion cumplia con 
+					todos los requisitos empresariales.
+
+ TA1 Es la menos utilizada		Se llama Reconocimiento tecnico, segun el sitio web de IBM, el TA1 no se 
+					utiliza normalmente porque indica solo que un se recibio amble up y no lo
+					que habia dentro del sobre, se puede utilizar para confirmar que el ISA y 
+					los sobres de intercambio de IEA fueron altos, que su primer y ultima 
+					linea de su archivo EDI es sintacticamente correcta, cuando no se reconoce
+					como una transaccion.
+					En ISA14 se coloca una bandera, si esta correcto es un 1, pero si esta mal es
+					un 0, entonces significa que TA1 solo se envia si hay errores.
+
+ 999 Es para atencion Medica		Incluye informacion adiccional sobre la transaccion recibida habia errores,
+					como el cumplimiento de los requisitos de hipper.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+	Mensajes EDI de comercio electronico
+		'' 
+ 
+ 861 Receiving Advice/Acceptance Certificate File Format
+ 862 shipping schedule Transactions
+ 863 Report of Test Results
+ 864 Text Message
+ 865 Purchase Order change Acknowlegment/Request - Seller Initiated
+ 866 Production Sequence
+ 867 product Trasfer and Resale Report file format
+ 868 Electronic Form Structure
+ 869 Order Status Inquiry
+
+ 870 - 896, 920- 928, 940 - 946
+
+		NOTA: /*Ejemplo deflujo con archivo 850(Orden de compra)*
+					Es el mismo flujo de precesos que se utilizara 
+					para el cliente, segun los documntos enviados al correo */
+
+	recivimos 1, enviamos 3 
+
+	Buyer (Customer)					Seller (Vendedor)
+		9:00 am  -----850 Purchase Order-----> 
+
+			<-----855 Confirmation---------		Checks Inventory
+			(Service Leve - Within 4 Hours)		9:25 am
+
+								Loads Truck or 
+								Ships UPS
+								4:15 pm
+
+			<--856 Adv Shipping notice (ASN)--	4:25 pm
+			(Service Leve - Ship by close of
+				next business day)		
+
+								Next Morning
+								Accounting Updates System
+								8:30 am
+
+			<------------810 Invose-----------	8:50 am
+			
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+				NOTA: /*EL correo del cliente anexa y solicita el manejo de estos documentos (204, 990, 997, y 214)*/
+
+	Mensajes EDI del portador del motor
+		'204, 990, 214, 210' 
+
+ 
+	1. EDI 204	[Motor Carrie Load Tender]			Es la licitacion de carga del cliente, lo envia a la empresa camionera o al provedor de servicios
+													Se llama la herramienta EDI para la licitacion de carga de portamotores;
+													Puede crear un nuevo envio, actualizar o cancelar un envio existente.
+
+	2. EDI 990	[Response to Load Tender]			El Remitente o la compañia de carga retorna un EDI 990, que se llama la Respuesta y basicamente
+													Dice si esta aceptado o rechazado el envio.
+
+	3. EDI 214	[Status Messages		]			El Remitente o la compañia de carga envia mensajes de estado, segun tantas como sea necesario
+													Es mas apropiado enviar estos mensajes cuando ocurre un evento importante.
+
+	4. EDI 210	[Shipment completed		]			El Remitente o la compañia de carga envia la factura al cliente
+													Es mas apropiado enviar estos mensajes cuando ocurre un evento importante.
+
+
+			Trucking/Logistics  -	Datos de Ejemplo.
+
+ * Carier Identification information (SCAC)			Todos los portadores identificados con el que se llama un codigo de refrigerio,
+   (Standar Carier Alpha Code)						Es un identificador de 4 letras que es unico para cada operador.
+
+ * Equipent requiments								Requisitos de equipo, como la logitud del camion, tal vez si lleva material peligroso.
+
+ * Ship-to location for shipment recipient
+ 
+ * Information on consignees, is relevant
+
+ * Description of goods, inluding wight and other units of measure
+
+ * Shipping instructions
+
+	EDI 211	[Motor Carrie Bill of Lading]				Es la factura de embarque de transportista de automoviles que permite a los 
+														cargadores u otras partes proporcionar la factura legal de embarque para un envio.
+
+	EDI 212	[Motor Carrier delivery Trailer Manifest]	Es el remolque de entrega, manifiesto se puede utilizar para permitir a los transportistas de automoviles
+														proporcionando a los firmantes con otras partes interesadas con el contenido de un remolque que convierte varios envios
+ 
+	EDI 213	[Motor Carrier Shipment Status Inquiry]		Puede ser utilizado por un remitente que necesita solicitar el estado de envio de un transportista de motor
+
+	Etc.. etc...
+
+
+
+			Tipos  de modos de envio	otros mensajes EDI
+	
+		TL = Truck Load
+		LTL = Less Than Truck Load
+
+ EDI 990
+ Formato para EDI 990
+ Para representar cómo se ve el conjunto de datos de transacciones EDI 990, aquí hay un formato de ejemplo de cómo se 
+ estructuran diferentes segmentos en el conjunto de transacciones EDI 990:
+ 
+				ISA*00*02*CARRIERID*1400622827TMO204*05O90*0652*U*00400*000001504*0*P*>~
+				
+				GS*GF*CARRIERID*006922827MO204*20050909*0652*1504*X*004010~
+				
+				ST*990*15040001~
+				
+				BT*SCA*2144832*20050909*D~
+				
+				K1*PROBLEMAS DE PROGRAMACIÓN~
+				
+				SE*4*15040001~
+				
+				GE*181504~
+				
+				AIE*1*000001504
+ 
+
+
+ EDI 214
+
+	B10	Referencia del remitente
+	LO 
+	POPedido de compra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

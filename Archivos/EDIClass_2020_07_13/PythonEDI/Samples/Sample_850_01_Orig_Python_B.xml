@@ -1,0 +1,64 @@
+<PO850>
+  <PONum>1234567890</PONum>
+  <PODate>20080827</PODate>
+  <POType>NE</POType>
+  <VendorRefNum>2046159</VendorRefNum>
+  <RefDemo>123456</RefDemo>
+  <ShipToName>MARVEL STUDIOS</ShipToName>
+  <ShipToCode>92</ShipToCode>
+  <BuyerName/>
+  <BuyerPhone/>
+  <BuyerEmail/>
+  <LineItems>
+    <item>
+      <LineNum>00010</LineNum>
+      <Qty>50</Qty>
+      <UOM>EA</UOM>
+      <Price>47.06</Price>
+      <Basis>HP</Basis>
+      <PartNum>CATCR50</PartNum>
+      <Descr>CABLE RETAINER CLIP PLASTIC</Descr>
+      <DateRequested>20080903</DateRequested>
+    </item>
+    <item>
+      <LineNum>00020</LineNum>
+      <Qty>200</Qty>
+      <UOM>EA</UOM>
+      <Price>427.01</Price>
+      <Basis>HP</Basis>
+      <PartNum>512</PartNum>
+      <Descr>T-BAR BOX HANGER</Descr>
+      <DateRequested>20080903</DateRequested>
+    </item>
+    <item>
+      <LineNum>00030</LineNum>
+      <Qty>200</Qty>
+      <UOM>EA</UOM>
+      <Price>102.17</Price>
+      <Basis>HP</Basis>
+      <PartNum>MPLS</PartNum>
+      <Descr>DRYWALL BRACKET</Descr>
+      <DateRequested>20080903</DateRequested>
+    </item>
+    <item>
+      <LineNum>00040</LineNum>
+      <Qty>560</Qty>
+      <UOM>EA</UOM>
+      <Price>244.18</Price>
+      <Basis>HP</Basis>
+      <PartNum>CAT324Z34</PartNum>
+      <Descr>PRE-RIV ASSMBY</Descr>
+      <DateRequested>20080903</DateRequested>
+    </item>
+    <item>
+      <LineNum>00050</LineNum>
+      <Qty>50</Qty>
+      <UOM>EA</UOM>
+      <Price>360.04</Price>
+      <Basis>HP</Basis>
+      <PartNum>CAT64</PartNum>
+      <Descr>4IN J-HOOK</Descr>
+      <DateRequested>20080903</DateRequested>
+    </item>
+  </LineItems>
+</PO850>

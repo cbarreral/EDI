@@ -1,0 +1,13 @@
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe.config
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.pdb
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.exe
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.pdb
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe.config
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.pdb
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.csprojAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.exe
+C:\Users\Carlos\Documents\GitHub\EDI\Archivos\EDIClass_2021_02_17\C#EDI\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.pdb

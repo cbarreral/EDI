@@ -1,0 +1,10 @@
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\bin\Debug\ArchivosEDI.exe.config
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\bin\Debug\ArchivosEDI.exe
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\bin\Debug\ArchivosEDI.pdb
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.csprojAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.Form1.resources
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.Properties.Resources.resources
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.csproj.GenerateResource.cache
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.csproj.CoreCompileInputs.cache
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.exe
+C:\Users\Carlos\Documents\GitHub\EDI\ArchivosEDI\ArchivosEDI\obj\Debug\ArchivosEDI.pdb

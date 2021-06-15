@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<PO850>
+    <ISAControlNum>000000005</ISAControlNum>
+    <GSControlNum>001</GSControlNum>
+    <POType>NE</POType>
+    <PONumber>1234567890</PONumber>
+    <PODate>20080827</PODate>
+    <ABDemo>123456</ABDemo>
+    <VendorRefNum>2046159</VendorRefNum>
+    <BuyerName>JANE WATSON</BuyerName>
+    <BuyerTelephone>800-555-1234</BuyerTelephone>
+    <BuyerEmail>BuyerName@gmail.com</BuyerEmail>
+    <ShipTo>MARVEL STUDIOS</ShipTo>
+    <Warehouse>SPID</Warehouse>
+    <LineItem>
+        <LineItem>00010</LineItem>
+        <Quantity>50</Quantity>
+        <UOM>EA</UOM>
+        <Price>47.06</Price>
+        <PriceBasis>HP</PriceBasis>
+        <ProductCode>CATCR50</ProductCode>
+        <ProductDescr>CABLE RETAINER CLIP PLASTIC</ProductDescr>
+        <RequiredDate>20080903</RequiredDate>
+    </LineItem>
+    <LineItem>
+        <LineItem>00020</LineItem>
+        <Quantity>200</Quantity>
+        <UOM>EA</UOM>
+        <Price>427.01</Price>
+        <PriceBasis>HP</PriceBasis>
+        <ProductCode>512</ProductCode>
+        <ProductDescr>T-BAR BOX HANGER</ProductDescr>
+        <RequiredDate>20080903</RequiredDate>
+    </LineItem>
+    <LineItem>
+        <LineItem>00030</LineItem>
+        <Quantity>200</Quantity>
+        <UOM>EA</UOM>
+        <Price>102.17</Price>
+        <PriceBasis>HP</PriceBasis>
+        <ProductCode>MPLS</ProductCode>
+        <ProductDescr>DRYWALL BRACKET</ProductDescr>
+        <RequiredDate>20080903</RequiredDate>
+    </LineItem>
+    <LineItem>
+        <LineItem>00040</LineItem>
+        <Quantity>560</Quantity>
+        <UOM>EA</UOM>
+        <Price>244.18</Price>
+        <PriceBasis>HP</PriceBasis>
+        <ProductCode>CAT324Z34</ProductCode>
+        <ProductDescr>PRE-RIV ASSMBY</ProductDescr>
+        <RequiredDate>20080903</RequiredDate>
+    </LineItem>
+    <LineItem>
+        <LineItem>00050</LineItem>
+        <Quantity>50</Quantity>
+        <UOM>EA</UOM>
+        <Price>360.04</Price>
+        <PriceBasis>HP</PriceBasis>
+        <ProductCode>CAT64</ProductCode>
+        <ProductDescr>4IN J-HOOK</ProductDescr>
+        <RequiredDate>20080903</RequiredDate>
+    </LineItem>
+</PO850>

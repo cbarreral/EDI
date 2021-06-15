@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PurchaseOrder850 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PONum>1234567890</PONum>
+  <PODateText>20080827</PODateText>
+  <PODate>2008-08-27T00:00:00</PODate>
+  <POType>NE</POType>
+  <VendorNumber>2046159</VendorNumber>
+  <BuyerName>JANE WATSON</BuyerName>
+  <BuyerTelephone>800-555-1234</BuyerTelephone>
+  <LineItems>
+    <PurchaseOrder850LineItem>
+      <lineItem>00010</lineItem>
+      <quantity>50</quantity>
+      <uom>EA</uom>
+      <price>47.06</price>
+      <basisOfUnitPrice>HP</basisOfUnitPrice>
+      <catalogNumber>CATCR50</catalogNumber>
+      <description>CABLE RETAINER CLIP PLASTIC</description>
+      <dateRequiredTxt>20080903</dateRequiredTxt>
+      <dateRequired>2008-09-03T00:00:00</dateRequired>
+    </PurchaseOrder850LineItem>
+    <PurchaseOrder850LineItem>
+      <lineItem>00020</lineItem>
+      <quantity>200</quantity>
+      <uom>EA</uom>
+      <price>427.01</price>
+      <basisOfUnitPrice>HP</basisOfUnitPrice>
+      <catalogNumber>512</catalogNumber>
+      <description>T-BAR *** BOX HANGER</description>
+      <dateRequiredTxt>20080903</dateRequiredTxt>
+      <dateRequired>2008-09-03T00:00:00</dateRequired>
+    </PurchaseOrder850LineItem>
+    <PurchaseOrder850LineItem>
+      <lineItem>00030</lineItem>
+      <quantity>200</quantity>
+      <uom>EA</uom>
+      <price>102.17</price>
+      <basisOfUnitPrice>HP</basisOfUnitPrice>
+      <catalogNumber>MPLS</catalogNumber>
+      <description>DRYWALL BRACKET</description>
+      <dateRequiredTxt>20080903</dateRequiredTxt>
+      <dateRequired>2008-09-03T00:00:00</dateRequired>
+    </PurchaseOrder850LineItem>
+    <PurchaseOrder850LineItem>
+      <lineItem>00040</lineItem>
+      <quantity>560</quantity>
+      <uom>EA</uom>
+      <price>244.18</price>
+      <basisOfUnitPrice>HP</basisOfUnitPrice>
+      <catalogNumber>CAT324Z34</catalogNumber>
+      <description>PRE-RIV ASSMBY</description>
+      <dateRequiredTxt>20080903</dateRequiredTxt>
+      <dateRequired>2008-09-03T00:00:00</dateRequired>
+    </PurchaseOrder850LineItem>
+    <PurchaseOrder850LineItem>
+      <lineItem>00050</lineItem>
+      <quantity>50</quantity>
+      <uom>EA</uom>
+      <price>360.04</price>
+      <basisOfUnitPrice>HP</basisOfUnitPrice>
+      <catalogNumber>CAT64</catalogNumber>
+      <description>4IN J-HOOK</description>
+      <dateRequiredTxt>20080903</dateRequiredTxt>
+      <dateRequired>2008-09-03T00:00:00</dateRequired>
+    </PurchaseOrder850LineItem>
+  </LineItems>
+</PurchaseOrder850>

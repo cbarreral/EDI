@@ -1,0 +1,66 @@
+{
+  "ISAControlNum": "000000005",
+  "GSControlNum": "001",
+  "POType": "NE",
+  "PONumber": "1234567890",
+  "PODate": "20080827",
+  "ABDemo": "123456",
+  "VendorRefNum": "2046159",
+  "BuyerName": "JANE WATSON",
+  "BuyerTelephone": "800-555-1234",
+  "BuyerEmail": "BuyerName@gmail.com",
+  "ShipTo": "MARVEL STUDIOS",
+  "Warehouse": "SPID",
+  "LineItem": [
+    {
+      "LineItem": "00010",
+      "Quantity": "50",
+      "UOM": "EA",
+      "Price": "47.06",
+      "PriceBasis": "HP",
+      "ProductCode": "CATCR50",
+      "ProductDescr": "CABLE RETAINER CLIP PLASTIC",
+      "RequiredDate": "20080903"
+    },
+    {
+      "LineItem": "00020",
+      "Quantity": "200",
+      "UOM": "EA",
+      "Price": "427.01",
+      "PriceBasis": "HP",
+      "ProductCode": "512",
+      "ProductDescr": "T-BAR ``` BOX HANGER",
+      "RequiredDate": "20080903"
+    },
+    {
+      "LineItem": "00030",
+      "Quantity": "200",
+      "UOM": "EA",
+      "Price": "102.17",
+      "PriceBasis": "HP",
+      "ProductCode": "MPLS",
+      "ProductDescr": "DRYWALL BRACKET *** size~=42",
+      "RequiredDate": "20080903"
+    },
+    {
+      "LineItem": "00040",
+      "Quantity": "560",
+      "UOM": "EA",
+      "Price": "244.18",
+      "PriceBasis": "HP",
+      "ProductCode": "CAT324Z34",
+      "ProductDescr": "PRE-RIV ASSMBY",
+      "RequiredDate": "20080903"
+    },
+    {
+      "LineItem": "00050",
+      "Quantity": "50",
+      "UOM": "EA",
+      "Price": "360.04",
+      "PriceBasis": "HP",
+      "ProductCode": "CAT64",
+      "ProductDescr": "4IN J-HOOK",
+      "RequiredDate": "20080903"
+    }
+  ]
+}

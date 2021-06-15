@@ -1,0 +1,6 @@
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe.config
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.exe
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\bin\Debug\EDIX12Parser.pdb
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.exe
+C:\Users\Administrator\source\repos\EDIX12Parser\EDIX12Parser\obj\Debug\EDIX12Parser.pdb

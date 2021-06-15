@@ -1,0 +1,90 @@
+<EDI><ST><ST00>ST</ST00><ST01>850</ST01><ST02>0001</ST02></ST>
+<BEG>
+   <BEG00>BEG</BEG00>
+   <BEG01>00</BEG01>
+   <BEG02>NE</BEG02>
+   <BEG03>NW3001</BEG03>
+   <BEG04/>
+   <BEG05>20200623</BEG05>
+</BEG>
+<REF>
+   <REF00>REF</REF00>
+   <REF01>AB</REF01>
+   <REF02>75222</REF02>
+</REF>
+<REF>
+   <REF00>REF</REF00>
+   <REF01>VR</REF01>
+   <REF02>88444</REF02>
+</REF>
+<PER>
+   <PER00>PER</PER00>
+   <PER01>BD</PER01>
+   <PER02>Jane Doe</PER02>
+   <PER03>TE</PER03>
+   <PER04>972-555-1212</PER04>
+   <PER05>EM</PER05>
+   <PER06>JaneDoe@gmail.com</PER06>
+</PER>
+<N1>
+  <N100>N1</N100>
+  <N101>ST</N101>
+  <N102>MegaCorp Main Warehouse *** C/O Fred Jones</N102>
+  <N103>92</N103>
+  <N104>SPID</N104>
+</N1>
+    <PO1>
+        <PO100>PO1</PO100>
+        <PO101>01</PO101>
+        <PO102>5</PO102>
+        <PO103>EA</PO103>
+        <PO104>99.97</PO104>
+        <PO105>PE</PO105>
+        <PO106>VC</PO106>
+        <PO107>AB01</PO107>
+      </PO1>
+      <PID>
+        <PID00>PID</PID00>
+        <PID01>F</PID01>
+        <PID02/>
+        <PID03/>
+        <PID04/>
+        <PID05>Digital *@* Widgets</PID05>
+      </PID>
+      <DTM>
+        <DTM00>DTM</DTM00>
+        <DTM01>106</DTM01>
+        <DTM02>20200705</DTM02>
+      </DTM>
+    <PO1>
+        <PO100>PO1</PO100>
+        <PO101>02</PO101>
+        <PO102>8</PO102>
+        <PO103>IN</PO103>
+        <PO104>45.99</PO104>
+        <PO105>PE</PO105>
+        <PO106>VC</PO106>
+        <PO107>GC02</PO107>
+      </PO1>
+      <PID>
+        <PID00>PID</PID00>
+        <PID01>F</PID01>
+        <PID02/>
+        <PID03/>
+        <PID04/>
+        <PID05>14K Gold Chain - Weight=~.08Cm</PID05>
+      </PID>
+      <DTM>
+        <DTM00>DTM</DTM00>
+        <DTM01>106</DTM01>
+        <DTM02>20200709</DTM02>
+      </DTM>
+    <CTT> 
+       <CTT00>CTT</CTT00> 
+       <CTT01>2</CTT01> 
+    </CTT> 
+    <SE> 
+       <SE00>SE</SE00> 
+       <SE01>14</SE01> 
+       <SE02>0001</SE02> 
+    </SE></EDI>
